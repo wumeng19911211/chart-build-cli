@@ -5,7 +5,7 @@ const fs = require('fs');
 const getTemplate = (projectName) => {
   const spinner = ora('正在下载项目模板').start();
   return new Promise((resolve,reject) => {
-    download('direct:http://opensource.cnsuning.com/bee/chart-template.git', projectName, {
+    download('link', projectName, {
       clone: true
     }, function (err) {
       if(!err){
